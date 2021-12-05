@@ -152,6 +152,7 @@
     <ClCompile Include="Puzzle_1_II.cpp" />
     <ClCompile Include="Puzzle_2_I.cpp" />
     <ClCompile Include="Puzzle_2_II.cpp" />
+    <ClCompile Include="Puzzle_3_I.cpp" />
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +161,7 @@
     <ClInclude Include="Puzzle_1_II.h" />
     <ClInclude Include="Puzzle_2_I.h" />
     <ClInclude Include="Puzzle_2_II.h" />
+    <ClInclude Include="Puzzle_3_I.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

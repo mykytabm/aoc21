@@ -6,6 +6,7 @@
 #include "Puzzle_2_I.h"
 #include "Puzzle_2_II.h"
 
+#include "Puzzle_3_I.h"
 
 int main()
 {
@@ -17,8 +18,11 @@ int main()
 	//Puzzle_2_I puzzle2Part1 = Puzzle_2_I();
 	//puzzle2Part1.Solve();
 
-	Puzzle_2_II puzzle2Part2 = Puzzle_2_II();
-	puzzle2Part2.Solve();
+	//Puzzle_2_II puzzle2Part2 = Puzzle_2_II();
+	//puzzle2Part2.Solve();
+
+	Puzzle_3_I puzzle3Part1 = Puzzle_3_I();
+	puzzle3Part1.Solve();
 
 	return 0;
 }
