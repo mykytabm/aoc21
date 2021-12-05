@@ -146,13 +146,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Command.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Puzzle_1.cpp" />
-    <ClCompile Include="Puzzle_2.cpp" />
+    <ClCompile Include="Puzzle_1_I.cpp" />
+    <ClCompile Include="Puzzle_1_II.cpp" />
+    <ClCompile Include="Puzzle_2_I.cpp" />
+    <ClCompile Include="Puzzle_2_II.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Puzzle_1.h" />
-    <ClInclude Include="Puzzle_2.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="Puzzle_1_I.h" />
+    <ClInclude Include="Puzzle_1_II.h" />
+    <ClInclude Include="Puzzle_2_I.h" />
+    <ClInclude Include="Puzzle_2_II.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

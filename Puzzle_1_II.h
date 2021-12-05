@@ -4,7 +4,7 @@
 #include <iostream>
 #include <deque>
 
-class Puzzle_2
+class Puzzle_1_II
 {
 private:
 	int _timesDepthIncreased = 0;
@@ -15,6 +15,6 @@ private:
 
 
 public:
-	Puzzle_2();
+	Puzzle_1_II();
 	void Solve();
 };

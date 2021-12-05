@@ -1,7 +1,7 @@
-#include "Puzzle_2.h"
+#include "Puzzle_1_II.h"
 
 
-Puzzle_2::Puzzle_2()
+Puzzle_1_II::Puzzle_1_II()
 {
 }
 
@@ -11,7 +11,7 @@ int SumDq(std::deque <int> dq) {
 		sum += n;
 	return sum;
 }
-void Puzzle_2::Solve()
+void Puzzle_1_II::Solve()
 {
 	_timesDepthIncreased = 0;
 	_currentDepth = 0;
@@ -29,15 +29,6 @@ void Puzzle_2::Solve()
 		{
 			_currentDepth = std::stoi(tp);
 
-			if (_a.size() < 3) {
-				_a.push_back(_currentDepth);
-			}
-
-			if (_b.size() < 3) {
-				if (counter > 0) {
-					_b.push_back(_currentDepth);
-				}
-			}
 
 			if (_a.size() == 3 && _b.size() == 3) {
 				if (firstTime) {
@@ -53,7 +44,19 @@ void Puzzle_2::Solve()
 					_b.pop_front();
 					_b.push_back(_currentDepth);
 				}
+				continue;
 			}
+
+			if (_a.size() < 3) {
+				_a.push_back(_currentDepth);
+			}
+
+			if (_b.size() < 3) {
+				if (counter > 0) {
+					_b.push_back(_currentDepth);
+				}
+			}
+
 			counter++;
 		}
 	}

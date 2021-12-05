@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 
-class Puzzle_1
+class Puzzle_1_I
 {
 private:
 	int _timesDepthIncreased = 0;
@@ -11,6 +11,6 @@ private:
 	int _currentDepth = 0;
 
 public:
-	Puzzle_1();
+	Puzzle_1_I();
 	void Solve();
 };

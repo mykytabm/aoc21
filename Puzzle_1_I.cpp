@@ -1,10 +1,10 @@
-#include "Puzzle_1.h"
+#include "Puzzle_1_I.h"
 
-Puzzle_1::Puzzle_1()
+Puzzle_1_I::Puzzle_1_I()
 {
 }
 
-void Puzzle_1::Solve()
+void Puzzle_1_I::Solve()
 {
 	_timesDepthIncreased = 0;
 	_currentDepth = 0;
@@ -16,7 +16,7 @@ void Puzzle_1::Solve()
 		std::string tp;
 		while (std::getline(newfile, tp)) { //read data from file object and put it into string.
 			_currentDepth = std::stoi(tp);
-			if (_currentDepth > _previousDepth&&_previousDepth!=-1) {
+			if (_currentDepth > _previousDepth && _previousDepth != -1) {
 				_timesDepthIncreased++;
 			}
 			_previousDepth = _currentDepth;
